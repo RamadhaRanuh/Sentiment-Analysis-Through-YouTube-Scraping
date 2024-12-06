@@ -1,8 +1,30 @@
-# Sentiment-Analysis-Through-YouTube-Scraping
-This project leverages Google Cloud YouTube API v3 to scrape user comments from YouTube videos, aiming to uncover valuable insights into audience sentiments. The collected data undergoes preprocessing and analysis using three distinct machine learning models:
+# YouTube Sentiment Analysis
 
-    Random Forest with Word2Vec features for robust and interpretable predictions.
-    Logistic Regression with TF-IDF for efficient and reliable performance on text data.
-    LSTM with TF-IDF for capturing sequential patterns in sentiment analysis.
+This project analyzes sentiments in YouTube comments scraped using the **Google Cloud YouTube API v3**. By employing three different machine learning models, it offers a comprehensive understanding of audience sentiments.  
 
-The models demonstrate an impressive average train-test accuracy of 85-90%, showcasing the effectiveness of the approach. This project combines advanced natural language processing techniques with sentiment analysis to deliver meaningful insights into public opinions on YouTube.
+## Features
+- Scraping YouTube comments using **Google Cloud YouTube API v3**.
+- Sentiment analysis using three models:
+  - **Random Forest** with Word2Vec features.
+  - **Logistic Regression** with TF-IDF features.
+  - **LSTM** with TF-IDF features.
+- Average train-test accuracy of **85-90%** across all models.
+
+## Requirements
+Before running the project, ensure you have the following:
+- Python 3.10 or higher
+- A Google Cloud account and API key for YouTube Data API v3
+
+## Project Structures
+youtube-sentiment-analysis/  
+├── preprocess.ipynb                   # Model  
+├── requirements.txt                   # Requirement Library 
+├── scrapping.ipynb                    # Script to scrape YouTube comments
+├── YoutubeCommentScrapDataset.csv     # Dataset Created from scrapping.ipynb
+
+## Results
+The project demonstrates the following performance:
+
+    Random Forest with Word2Vec: Test Accuracy ~ 79%
+    Logistic Regression with TF-IDF: Test Accuracy ~ 87%
+    LSTM with TF-IDF: Test Accuracy ~ 90%
