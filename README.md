@@ -15,12 +15,15 @@ Before running the project, ensure you have the following:
 - Python 3.10 or higher
 - A Google Cloud account and API key for YouTube Data API v3
 
-## Project Structures
+## Project Structure  
+
+```plaintext
 youtube-sentiment-analysis/  
-├── preprocess.ipynb                   # Model  
-├── requirements.txt                   # Requirement Library 
-├── scrapping.ipynb                    # Script to scrape YouTube comments
-├── YoutubeCommentScrapDataset.csv     # Dataset Created from scrapping.ipynb
+├── preprocess.ipynb                   # Notebook for preprocessing and modeling  
+├── requirements.txt                   # File listing required libraries  
+├── scrapping.ipynb                    # Notebook to scrape YouTube comments  
+├── YoutubeCommentScrapDataset.csv     # Dataset created from scrapping.ipynb  
+```
 
 ## Results
 The project demonstrates the following performance:
